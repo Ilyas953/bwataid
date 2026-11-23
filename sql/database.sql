@@ -1,0 +1,10 @@
+CREATE DATABASE DATA;
+CREATE TABLE suggestions (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    titles VARCHAR(150) NOT NULL,
+    descriptions VARCHAR(300),
+    usernames VARCHAR(100) NOT NULL,
+    dates DATETIME DEFAULT CURRENT_TIMESTAMP,
+    votes INT DEFAULT 0);
+    
+   
